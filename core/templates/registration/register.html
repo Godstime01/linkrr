@@ -1,0 +1,20 @@
+{% extends '../base.html' %}
+
+{% block content %}
+<section class="max-w-screen-xl pt-20 px-4 mx-auto">
+
+    <form action="" method="post" class="max-w-sm mx-auto border rounded p-3">
+        <h2 class="text-center text-2xl font-bold mb-4 capitalize">Create account</h2>
+        {% csrf_token %}
+        {% for field in form %}
+            <label for="" class="block mb-2">
+                {{field.label}}
+            </label>
+            {{field}}
+        {% endfor %}
+
+        <button type="submit" class="block mt-3 p-4 w-full bg-[#D62639]">Register</button>
+    </form>
+    
+</section>
+{% endblock %}

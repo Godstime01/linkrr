@@ -1,0 +1,45 @@
+{% extends './base.html' %}
+
+{% block content %}
+<section class="max-w-screen-xl pt-20 px-4 mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center">
+        <div>
+            <h2 class="text-7xl font-bold ">The core of your <span class="block ">online galaxy</span></h2>
+
+            <div class="flex gap-4 items-center mt-5">
+                <span class="text-2xl">{{request.get_host}}/</span>
+                <form class="flex items-center items-center gap-2" action="" method="post">
+                    <input type="text" placeholder=".." class="border border-white bg-transparent">
+                    <button type="submit" class="bg-[#D62639] p-2">claim your link</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="w-full max-w-sm bg-[#D62639] rounded-lg shadow">
+
+            <div class="flex flex-col items-center py-10 px-5">
+                <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="/docs/images/people/profile-picture-3.jpg"
+                    alt="Bonnie image" />
+                <h5 class="mb-1 text-xl font-medium text-gray-900">Bonnie Green</h5>
+                <span class="text-sm text-gray-500 ">Visual Designer</span>
+                <div class="flex w-full flex-col mt-4 md:mt-6 gap-4">
+                    <a href="#"
+                        class="block border w-full items-center px-4 py-2 text-sm font-medium text-center text-white ">Twitter</a>
+
+                    <a href="#"
+                        class="block border w-full items-center px-4 py-2 text-sm font-medium text-center text-white ">Facebook</a>
+
+                    <a href="#"
+                        class="block border w-full items-center px-4 py-2 text-sm font-medium text-center text-white ">Instagram</a>
+
+                    <a href="#"
+                        class="block border w-full items-center px-4 py-2 text-sm font-medium text-center text-white ">Linkedin</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
